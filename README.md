@@ -76,7 +76,7 @@ A quick look at the top-level files and directories you'll see in a typical Gats
 
 1.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-1.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+1.  **`LICENSE`**: This Kaz's Tech is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
 1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 

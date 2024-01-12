@@ -1,3 +1,9 @@
+const dotenv = require('dotenv')
+
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config()
+}
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -9,15 +15,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Kaz's Tech Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Kaz Smino`,
+      summary: `who lives in Vancouver.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A tech blog.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      linkedin: `kaz-smino-27a20a178`,
     },
   },
   plugins: [
@@ -102,7 +108,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Kaz's Tech Blog RSS Feed",
           },
         ],
       },
@@ -110,7 +116,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Kaz's Tech Blog`,
         short_name: `Gatsby`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -121,5 +127,13 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `kuqx90woog8r`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      }
+    },
+    `@contentful/rich-text-react-renderer`,
   ],
 }
