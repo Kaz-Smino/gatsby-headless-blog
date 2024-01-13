@@ -19,6 +19,7 @@ The other day, a friend asked me a question about Linux commands that I couldn't
  -  [Main Content](#anchor2)
  -  [Further Exploration: Pipe vs. Find -exec](#anchor3)
  -  [Final Thoughts](#anchor4)
+ -  [References](#anchor5)
 
 <a id="anchor1"></a>
 ## Prerequisites
@@ -83,3 +84,10 @@ To be honest, when my friend first asked me about Linux commands, I intuitively 
 ## Final Thoughts
 
 This has been a great reminder of the importance of regularly using Linux commands. From here on out, I'll continue to learn and share my discoveries. If you have any questions or suggestions, feel free to send a message via [LinkedIn](https://www.linkedin.com/in/kaz-smino-27a20a178).
+
+<a id="anchor5"></a>
+## References
+
+I found the following resources helpful while writing this blog post:
+
+- [Linux man pages online](https://man7.org/linux/man-pages/man1/find.1.html#EXAMPLES)
